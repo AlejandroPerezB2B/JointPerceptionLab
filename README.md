@@ -4,6 +4,8 @@
 
 Authors: Itziar Urquiola de Castro, Alejandro Pérez
 
+![Joint Perception Lab interface](docs/images/screenshotGUI.png)
+
 ## Start here
 
 - [Experiment overview and exact trial order](docs/protocols/EXPERIMENTAL_DESIGN.md)
