@@ -11,3 +11,38 @@ See [experimental design](EXPERIMENTAL_DESIGN.md) for complete factor levels, bl
 **Dependent measures:** response, accuracy, hit/miss/false alarm/correct rejection, response-cue-locked RT, and timing QC. The SDT helper computes sensitivity and criterion; consult `sdt.py` for correction and aggregation details.
 
 **Validation needed:** display-onset timing, frame pacing, cross-machine onset alignment, stimulus-file hashes, participant instruction approval and stimulus redistribution rights.
+
+# Biological Motion Detection Task
+
+This biological motion detection task is inspired by Szymanek, Senderecka, & Hohol (2026), *I see moving people: Expectations drive detection of biological motion in noisy point-light displays*, Psychonomic Bulletin & Review. The stimuli are based on the point-light biological motion displays originally used by van Elk (2013) and later used in that task.
+
+The implementation includes two conditions:
+
+1. **Individual condition**: one participant performs the task alone.
+2. **Shared condition**: two participants perform the same task simultaneously on two interconnected laptops.
+
+## Stimulus naming convention
+
+Example:
+
+```text
+U48R-10.mp4
+```
+
+| Component | Meaning |
+|---|---|
+| `U` | unscrambled / intact walker / signal present |
+| `S` | scrambled / no walker / signal absent |
+| `24, 48, 96, 192` | number of distractor dots |
+| `L` | leftward movement |
+| `R` | rightward movement |
+| `-20, -10, 0, 10, 20` | horizontal position |
+
+## References
+
+Hautus, M. J. (1995). Corrections for extreme proportions and their biasing effects on estimated values of d′. *Behavior Research Methods, Instruments, & Computers*, 27, 46–51.
+
+Szymanek, A., Senderecka, M., & Hohol, M. (2026). *I see moving people: Expectations drive detection of biological motion in noisy point-light displays*. *Psychonomic Bulletin & Review*.
+
+van Elk, M. (2013). Biological motion point-light display stimuli used as the basis for the task.
+
