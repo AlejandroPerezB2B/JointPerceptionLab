@@ -4,11 +4,10 @@
 
 Authors: Itziar de Castro Urquiola , Alejandro Pérez
 
-<p align="center">
-  <img src="docs/images/screenshotGUI.png" width="450"
+<p align="left">
+  <img src="docs/images/screenshotGUI.png" width="500"
        alt="Joint Perception Lab interface">
 </p>
-![Joint Perception Lab interface](docs/images/screenshotGUI.png)
 
 ## Start here
 
