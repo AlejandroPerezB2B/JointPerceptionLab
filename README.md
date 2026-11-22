@@ -2,7 +2,7 @@
 
 **Version 0.6 — research prototype.** Desktop application for individual and dyadic biological-motion detection and numerical line-bisection tasks, using Python, PySide6, PsychoPy and TCP networking. **Not yet validated for research-grade display synchronisation or pixel-perfect replication of the historical line-bisection protocol.**
 
-Authors: Itziar Urquiola de Castro, Alejandro Pérez
+Authors: Itziar de Castro Urquiola , Alejandro Pérez
 
 ![Joint Perception Lab interface](docs/images/screenshotGUI.png)
 
