@@ -11,3 +11,99 @@ This implementation asks participants to estimate the numerical location of a ma
 **Shared:** host/client display same target sequence, respond privately; both responses are exchanged before the next trial. Either participant's Space advances both after the response barrier and locally sampled ITI. Synchronisation is TCP-based and unvalidated at the display hardware.
 
 **Pending scientific decisions:** intended viewing distance, stimulus physical dimensions, endpoint labels, fixation, exact practice instructions, response mapping, timing and randomisation policy.
+
+# Line Bisection Task
+
+## Overview
+
+Implementation of a computerized line bisection experiment designed to investigate whether performing a perceptual task alone or in the simultaneous presence of another person alters perceptual processing.
+
+The experiment includes two experimental conditions:
+
+1. **Individual condition**  
+   Participants perform the task alone inside an isolated laboratory cubicle.
+
+2. **Shared condition**  
+   Two participants perform the exact same task simultaneously while seated side by side using interconnected laptops.
+
+The perceptual task itself is identical across conditions. The critical manipulation concerns whether the task is performed:
+- in isolation,
+- or in a shared perceptual environment.
+
+The experiment was designed to explore how commonly perceived environments may influence:
+- spatial attention,
+- perceptual organization,
+- and potentially low-level perceptual processing.
+
+---
+
+# Stimuli
+
+Participants are presented with:
+- a horizontal white line,
+- displayed centrally on a black background,
+- intersected by a short vertical tick mark.
+
+Participants must estimate where the tick is located along the line.
+
+The response scale is:
+
+```text
+-1000 -------------------- 0 -------------------- +1000
+```
+
+where:
+- `-1000` corresponds to the far-left end of the line,
+- `0` corresponds to the exact center,
+- `+1000` corresponds to the far-right end.
+
+Participants type their estimate directly using the keyboard and confirm the response by pressing `ENTER`.
+
+Example valid responses:
+
+```text
+-350
++420
++0
+```
+
+---
+
+# Trial Structure
+
+- 73 equally spaced tick positions
+- ranging from `-900` to `+900`
+- each repeated twice
+- total: 146 trials
+
+Two fixed pseudorandom trial orders are generated:
+- one for the individual condition,
+- one for the shared condition.
+
+All participants receive exactly the same order within each condition.
+
+---
+
+# Timing
+
+The task is self-paced.
+
+Before each trial participants see:
+
+```text
+Press SPACE to start
+```
+
+Only the spacebar initiates the next trial.
+
+After a valid response:
+- a black screen appears,
+- with a random inter-trial interval between 300–500 ms.
+
+---
+
+Participants:
+- perform the same task,
+- share the same temporal structure,
+- but remain perceptually and behaviorally independent regarding their responses.
+
